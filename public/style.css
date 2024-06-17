@@ -170,9 +170,14 @@
     background: var(--warning-50);
     border: none;
     width: 24px;
+    height: 24px;
+    display: inline-block; 
+    text-align: center; 
     font-size: 20px;
     margin: 1em;
     animation: buttonClickAnimation 1.5s infinite linear;
+    text-decoration: none;
+    color: var(--black);
   }
 
   @keyframes buttonClickAnimation {
@@ -190,16 +195,7 @@
     padding: 2em;
     margin: 2em;
     height: max-content;  
-    display: none;
     position: relative;
-  }
-
-  .closedPopup {
-    display: none;
-  }
-
-  .mobilePopup.active {
-  display: block;
   }
 
   .closePopupButton {
@@ -231,7 +227,7 @@
     margin: 0 0 1em 0;
   } 
 
-  a {
+  .video {
     background: var(--white);
     border-radius: var(--small-desktop);
     color: var(--tno-blue-dark);
