@@ -37,6 +37,7 @@
     --blue-120: #002fa8;
     --blue-130: #00288f;
     --tno-blue: #123EB7;
+    --tno-blue-dark: #002484;
 
     /* SECONDARY COLOURS */
     
@@ -109,7 +110,7 @@
     
     --paragraph: 16px;
   }
-  
+
    /* ALGEMENE STYLING */
 
   @font-face {
@@ -144,7 +145,7 @@
   }
 
   main {
-    height: 100vh;
+    height: 100%;
   }
 
   footer {
@@ -230,6 +231,21 @@
     margin: 0 0 1em 0;
   } 
 
+  a {
+    background: var(--white);
+    border-radius: var(--small-desktop);
+    color: var(--tno-blue-dark);
+    text-decoration: none;
+    padding: 0.4em;
+    font-weight: bold;
+    margin: 1em;
+  }
+
+  .arrow {
+    padding: 0.4em 0 0 0;
+    scale: 1.5;
+  }
+
   /* INFOGRAPHIC */
 
   #infographicContainer {
@@ -261,6 +277,8 @@
       transform: rotate(-0.1deg);
     }
   }
+
+  /* MEDIA QUEARIES */
 
   @media (width > 37.5em) {
     .intro {

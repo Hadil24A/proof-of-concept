@@ -1,34 +1,33 @@
 <%- include('./partials/head') %>
 
 <main>
-<!-- mobile -->
 
     <% tno.forEach(tno => { %>
         <p class="intro"><%= tno.intro %></p>
     <% }) %>
     
-    
     <%- include('./partials/infographic') %>
 
-            <% tno.forEach(item => { %>
-                <% item.chapters.forEach(chapter => { %>
-                    <article>
-                        <div class="mobilePopup" id="moreInf-<%= chapter.id %>">
-                            <button class="closePopupButton">
-                                <picture>
-                                    <img class="popupImage" src="/images/closeButton.svg" alt="close popup" loading="lazy">
-                                </picture>                    
-                            </button>
+        <% tno.forEach(item => { %>
+            <% item.chapters.forEach(chapter => { %>
+                <article>
+                    <div class="mobilePopup" id="moreInf-<%= chapter.id %>">
+                        <button class="closePopupButton">
                             <picture>
-                                <img class="popupImage" src="/images/<%= chapter.id %>.<%= chapter.title %>.svg" alt="<%= chapter.title %>" loading="lazy">
-                            </picture>                
-                            <p class="title"><%= chapter.id %> <%= chapter.title %></p>
-                            <p class="content"><%- chapter.content %></p>
-                            <a href="<%= chapter.video_url %>" class="video">Bekijk de video </a>
-                        </div>
-                    </article>
-                <% }); %>
-            <% }) %>
+                                <img class="popupImage" src="/images/closeButton.svg" alt="close popup" loading="lazy">
+                            </picture>                    
+                        </button>
+
+                        <picture>
+                            <img class="popupImage" src="/images/<% chapter.title %>" alt="<%= chapter.title %>" loading="lazy">
+                        </picture>                
+                        <p class="title"><%= chapter.title %></p>
+                        <p class="content"><%- chapter.content %></p>
+                        <a href="<%= chapter.video_url %>" class="video">Bekijk de video <%- include('./partials/arrow') %></a>
+                    </div>
+                </article>
+            <% }); %>
+        <% }) %>
 
 </main>
 
