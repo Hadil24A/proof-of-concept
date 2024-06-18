@@ -2,12 +2,12 @@
 
 <main>
 
-    <%- include('./partials/infographic') %>
-
     <% tno.forEach(tno => { %>
         <p class="intro"><%= tno.intro %></p>
     <% }) %>
 
+    <%- include('./partials/infographic') %>
+    
     <% tno.forEach(item => { %>
         <% item.chapters.forEach(chapter => { %>
             <article>
@@ -27,6 +27,8 @@
                 </div>
             </article>
         <% }) %>
+
+
     <% }) %>
 
 </main>
