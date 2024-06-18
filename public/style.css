@@ -277,6 +277,10 @@
     }
   }
 
+  .desktopSVG {
+    display: none;   
+  }
+
   /* MEDIA QUEARIES */
 
   @media (width > 37.5em) {
@@ -298,11 +302,7 @@
     }
   }
 
-  @media (width > 46.8em) {
-    #infographic {
-      width: 36em;
-    }
-
+  @media (width > 53em) {
     .mobilePopup {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -325,18 +325,59 @@
       grid-area: filmpje;
     }
 
-    .desktopSVG { 
-      display: block;
-      height: 10em;
-      width: 11em;
+    #infographicContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 0.5fr);
+      border: 1.03px var(--tno-grey) solid;
+      padding: 1em;
+      width: 53em;
+      margin: 3em auto 3em auto;
+      justify-items: center; 
+    }
+    
+    #infographic {
+        grid-column: 1 / 3; 
+        grid-row: 2;
+        justify-self: center; 
+    }
+    
+    .desktopSVG:nth-of-type(1) {
+        grid-area: 2 / 1 / 3 / 2; 
+        justify-self: start;
+    }
+    
+    .desktopSVG:nth-of-type(2) {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    .desktopSVG:nth-of-type(3) {
+        grid-area: 4 / 2 / 4 / 3;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .desktopSVG:nth-of-type(4) {
+        grid-area: 3 / 2 / 4 / 3; 
+        justify-self: right;
+        align-self: self-end;
+    }
+    
+    .desktopSVG:nth-of-type(5) {
+        grid-area: 1 / 2 / 2 / 4;
+        justify-self: center;
+        align-self: end;
+    }
+    
+    .desktopSVG {
+        display: block;
+        height: 8em;
+        width: 11em;
     }
   }
-  @media (scripting: enabled)  {
-  .desktopSVG {
-    display: none;
-  }
 
-  .mobilePopup {
+  @media (scripting: enabled)  {
+   .mobilePopup {
     display: none;
   }
 
