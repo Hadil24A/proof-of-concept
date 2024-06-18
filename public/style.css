@@ -123,6 +123,7 @@
     font-family: "Object sans";
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -235,6 +236,7 @@
     padding: 0.4em;
     font-weight: bold;
     margin: 1em;
+    width: 10em;
   }
 
   .arrow {
@@ -281,8 +283,26 @@
       width: 34em;
       margin: 2em auto 2em auto;
     }
+
+    .mobilePopup {
+      width: 34em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2em auto 2em auto;
+    }
+
+    .video {
+      align-self: flex-end;
+    }
   }
 
   @media (width > 46.8em) {
 
+  }
+
+  @media (width > 53em) {
+    .mobilePopup {
+      width: 45em;
+    }
   }

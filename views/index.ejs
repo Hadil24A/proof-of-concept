@@ -3,7 +3,7 @@
 <main>
 
     <% tno.forEach(tno => { %>
-        <p class="intro"><%= tno.intro %></p>
+        <p id="intro" class="intro"><%= tno.intro %></p>
     <% }) %>
 
     <%- include('./partials/infographic') %>
@@ -12,11 +12,11 @@
         <% item.chapters.forEach(chapter => { %>
             <article>
                 <div class="mobilePopup" id="moreInf-<%= chapter.id %>">
-                    <button class="closePopupButton">
+                    <a href="#intro" class="closePopupButton">
                         <picture>
                             <img class="popupImage" src="/images/closeButton.svg" alt="close popup" loading="lazy">
                         </picture>                    
-                    </button>
+                    </a>
 
                     <picture>
                         <img class="popupImage" src="/images/<%= chapter.title %>" alt="<%= chapter.title %>" loading="lazy">
