@@ -15,14 +15,13 @@
                     <a href="#intro" class="closePopupButton">
                         <picture>
                             <img class="popupImage" src="/images/closeButton.svg" alt="close popup" loading="lazy">
-                        </picture>                    
                     </a>
 
                     <picture>
-                        <img class="popupImage" src="/images/<%= chapter.title %>" alt="<%= chapter.title %>" loading="lazy">
+                        <img class="popupImage" src="/images/<%= chapter.title %>.svg" alt="<%= chapter.title %>" loading="lazy">
                     </picture>         
                     <div class="info">      
-                        <p class="title"><%= chapter.title %></p>
+                        <h2 class="title"><%= chapter.title %></h2>
                         <p class="content"><%- chapter.content %></p>
                     </div>
                     <a href="<%= chapter.video_url %>" class="video">Bekijk de video <%- include('./partials/arrow') %></a>
