@@ -1,4 +1,13 @@
 <article id="infographicContainer">
+    
+    <% tno.forEach(item => { %>
+        <% item.chapters.forEach(chapter => { %>
+            <picture class="desktopSVG">
+                <img class="popupImage" src="/images/<%= chapter.title %>" alt="<%= chapter.title %>">
+            </picture>
+        <% }) %>
+    <% }) %>
+         
     <svg id="infographic"
     fill="none" xmlns="http://www.w3.org/2000/svg" 
     width="100%" height="100%" 

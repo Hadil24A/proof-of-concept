@@ -298,11 +298,48 @@
   }
 
   @media (width > 46.8em) {
+    #infographic {
+      width: 36em;
+    }
 
+    .mobilePopup {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        "content image"
+        "content filmpje";
+    }
+  
+    .popupImage {
+      grid-area: image;
+      align-self: center;
+      justify-self: center;
+    }
+  
+    .info {
+      grid-area: content;
+    }
+  
+    .video {
+      grid-area: filmpje;
+    }
+
+    .desktopSVG { 
+      display: block;
+      height: 10em;
+      width: 11em;
+    }
+  }
+  @media (scripting: enabled)  {
+  .desktopSVG {
+    display: none;
   }
 
-  @media (width > 53em) {
-    .mobilePopup {
-      width: 45em;
+  .mobilePopup {
+    display: none;
+  }
+
+  .mobilePopup.active {
+    display: block;
     }
   }
