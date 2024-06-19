@@ -3,7 +3,7 @@
     <% tno.forEach(item => { %>
         <% item.chapters.forEach(chapter => { %>
             <picture class="desktopSVG">
-                <img class="popupImage" src="/images/<%= chapter.title %>.svg" alt="<%= chapter.title %>">
+                <img class="popupImage" src="/images/<%= chapter.id %>.svg" alt="<%= chapter.title %>">
             </picture>
         <% }) %>
     <% }) %>

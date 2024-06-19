@@ -12,13 +12,13 @@
         <% item.chapters.forEach(chapter => { %>
             <article>
                 <div class="mobilePopup" id="moreInf-<%= chapter.id %>">
-                    <a href="#intro" class="closePopupButton">
+                    <a href="#infographicContainer" class="closePopupButton">
                         <picture>
                             <img class="popupImage" src="/images/closeButton.svg" alt="close popup" loading="lazy">
                     </a>
 
                     <picture>
-                        <img class="popupImage" src="/images/<%= chapter.title %>.svg" alt="<%= chapter.title %>" loading="lazy">
+                        <img class="popupImage" src="/images/<%= chapter.id %>.svg" alt="<%= chapter.title %>" loading="lazy">
                     </picture>         
                     <div class="info">      
                         <h2 class="title"><%= chapter.title %></h2>
