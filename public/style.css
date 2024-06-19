@@ -238,6 +238,7 @@
     font-weight: bold;
     margin: 1em;
     width: 10em;
+    display: inline-block;
   }
 
   .arrow {
@@ -259,6 +260,7 @@
     width: 100%;
     height: auto;
     max-width: 36em;
+    aspect-ratio: 405 / 245;
   }
 
   .fijnstof {
