@@ -146,7 +146,7 @@
   }
 
   main {
-    height: 100%;
+    height: 100vh;
   }
 
   footer {
@@ -303,6 +303,10 @@
   }
 
   @media (width > 53em) {
+    main {
+      height: 100%;
+    }
+    
     .mobilePopup {
       display: grid;
       grid-template-columns: 2fr 1fr;
