@@ -1,33 +1,43 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# TNO Infographic
+Voor DPI heb ik een interactieve tool ontwikkelt die de statische infographic van TNO naar een dynamische omgeving transformeert .
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+<img src= "https://github.com/Hadil24A/proof-of-concept/assets/144008714/2ac0d950-1291-4770-8f3a-bd6c911290f0" width="500px">
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+- [Beschrijving](https://www.notion.so/READ-ME-43aa2c8bd0b14df787d71c1cf901e2d9?pvs=21)
+- [Gebruik](https://www.notion.so/READ-ME-43aa2c8bd0b14df787d71c1cf901e2d9?pvs=21)
+- [Kenmerken](https://www.notion.so/READ-ME-43aa2c8bd0b14df787d71c1cf901e2d9?pvs=21)
+- [Installatie](https://www.notion.so/READ-ME-43aa2c8bd0b14df787d71c1cf901e2d9?pvs=21)
+- [Licentie](https://www.notion.so/READ-ME-43aa2c8bd0b14df787d71c1cf901e2d9?pvs=21)
 
 ## Beschrijving
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+Gebruikers kunnen op diverse punten binnen de infographic klikken om meer informatie te lezen. Deze informatie wordt dynamisch vanuit een API geladen.
 
 ## Gebruik
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+
+Als je de website opent, krijg je meteen de infographic te zien. Je ziet een plattegrond van een mini stadje. De fijnstof die vrijkomt in de stad beweegt. Ook zijn er bewegende buttons op de infographic. Als je daar op klikt wordt er een pop-up geopend en je krijgt meer informatie te zien over de fijnstof die daar vrijkomt. 
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+
+Voor deze website is gebruik gemaakt van van Node, Express en EJS. Ook heb ik CSS en client side Javascript voor (micro)interacties gebruikt.
 
 ## Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 
-## Bronnen
+- Fork deze repository;
+- Clone de repository op uw eigen apparaat;
+- Gebruik een editor naar keuze.
+- Installeer NodeJs
+- Run de command npm install
+- Run de command npm start
+- Klik op de localhost link en begin met coden!
+
+### Tools
+
+- Visual Studio Code
+- Render
 
 ## Licentie
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+This project is licensed under the terms of the [MIT license](https://www.notion.so/LICENSE).
