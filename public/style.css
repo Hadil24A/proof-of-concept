@@ -180,6 +180,7 @@
     animation: buttonClickAnimation 1.5s infinite linear;
     text-decoration: none;
     color: var(--black);
+    overflow-y: hidden;
   }
 
   @keyframes buttonClickAnimation {
@@ -282,6 +283,7 @@
 
   .desktopSVG {
     display: none;   
+    overflow-y: hidden;
   }
 
   /* MEDIA QUEARIES */
