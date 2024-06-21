@@ -114,7 +114,7 @@
    /* ALGEMENE STYLING */
 
   @font-face {
-    font-family: "Object sans";
+    font-family: "Object sans", sans-serif;
     src: url(font/ObjectSans-Regular.ttf);
   }
 
