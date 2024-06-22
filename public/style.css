@@ -114,13 +114,13 @@
    /* ALGEMENE STYLING */
 
   @font-face {
-    font-family: "Object sans", sans-serif;
+    font-family: "Object sans";
     src: url(font/ObjectSans-Regular.ttf);
   }
 
   * {
     box-sizing: border-box;
-    font-family: "Object sans";
+    font-family: "Object sans", "Roboto", "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
