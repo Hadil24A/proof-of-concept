@@ -1,20 +1,44 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
 
     // Open popup
-    
-    document.querySelectorAll('.openPopup').forEach(button => {
-        button.addEventListener('click', () => {
-            let popupId = button.getAttribute('data-popup-id')
-            document.getElementById(popupId).classList.toggle('active')
-        });
-    });
+  
+    document.querySelectorAll('.openPopup').forEach(function(button) {
+      button.addEventListener('click', function() {
+        let popupId = button.getAttribute('data-popup-id')
+        let popupElement = document.getElementById(popupId)
+  
+        // Scroll beahviour smooth toevoegen 
 
+        // View transition
+  
+        if (document.startViewTransition) {
+          document.startViewTransition(function () {
+            popupElement.classList.toggle('active')
+          })
+
+        } else {
+          popupElement.classList.toggle('active')      
+        }
+      })
+    })
+  
     // Close popup
-    
-    document.querySelectorAll('.closePopupButton').forEach(button => {
-        button.addEventListener('click', () => {
-            button.closest('.mobilePopup').classList.remove('active')
-        });
-    });
-});
+  
+    document.querySelectorAll('.closePopupButton').forEach(function(button) {
+      button.addEventListener('click', function() {
+        button.closest('.mobilePopup').classList.remove('active')
+  
+        // View transition
+  
+        if (document.startViewTransition) {
+          document.startViewTransition(function () {
+            popupElement.classList.remove('active')
+          })
 
+        } else {
+          popupElement.classList.remove('active')
+        }
+      })
+    })
+  })
+  
